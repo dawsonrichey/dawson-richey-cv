@@ -104,7 +104,8 @@ background-color:#000
 }
 
 .start-page-content .page-header .title-block h1, .site-title a  {
-color:#ffd100
+color:#ffd100;
+color:#ffd127;
 }
 
 .service-pg .block-title h3 {
@@ -148,7 +149,7 @@ margin:30px 0
 
 .info-list li .title {
 display:inline-block;
-min-width:90px
+min-width:150px;
 }
 
 .btn-group.share-buttons {
@@ -213,4 +214,29 @@ right:0;
 height:50px;
 background-color:#000
 }
+}
+
+div.download-resume, [data-id="blog"]  {
+  display: none;
+}
+
+footer{
+  text-align: center;
+  color: rgba(255, 255, 255, 0.822);
+}
+
+a.btn.btn-secondary {
+  display: none;
+}
+
+
+.site-main-menu li a, .site-main-menu li a:hover {
+  font-size: 20px;
+}
+
+.site-main-menu li a:hover {
+opacity: 0.9;}
+
+.header.mobile-menu-hide.sticked .site-title span {
+  color: #ffffff;
 }

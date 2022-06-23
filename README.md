@@ -30,3 +30,6 @@
 [ ] update resume
 [ ] add copy write to footer
 [ ] make age dynamic
+Update Profile picture on code pen
+Reorganize showcase on code-pen
+cconvert files to php

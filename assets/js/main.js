@@ -1,10 +1,3 @@
-/*
-* Template Name: PRO Card - Material Resume / CV / vCard Template
-* Author: lmpixels
-* Author URL: http://themeforest.net/user/lmpixels
-* Version: 1.0
-*/
-
 (function($) {
 "use strict";
     // Subpages resize
@@ -52,7 +45,7 @@
 
         $('#contact-form').on('submit', function (e) {
             if (!e.isDefaultPrevented()) {
-                var url = "contact_form/contact_form.php";
+                var url = "./contact_form/contact_form.php";
 
                 $.ajax({
                     type: "POST",
@@ -215,28 +208,7 @@
                         '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
                         '<div class="mfp-title mfp-bottom-iframe-title"></div>'+
                       '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
-
-                patterns: {
-                    youtube: {
-                      index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
-
-                      id: null, // String that splits URL in a two parts, second part should be %id%
-                      // Or null - full URL will be returned
-                      // Or a function that should return %id%, for example:
-                      // id: function(url) { return 'parsed id'; }
-
-                      src: '%id%?autoplay=1' // URL that will be set as a source for iframe.
-                    },
-                    vimeo: {
-                      index: 'vimeo.com/',
-                      id: '/',
-                      src: '//player.vimeo.com/video/%id%?autoplay=1'
-                    },
-                    gmaps: {
-                      index: '//maps.google.',
-                      src: '%id%&output=embed'
-                    }
-                },
+                // },
 
                 srcAction: 'iframe_src', // Templating object key. First part defines CSS selector, second attribute. "iframe_src" means: find "iframe" and set attribute "src".
             },
@@ -269,11 +241,6 @@
                 }
             });
 
-        //Google Maps
-        $("#map").googleMap();
-        $("#map").addMarker({
-            address: "15 avenue des champs Elysées 75008 Paris" // Your Address
-        });
     });
 
 })(jQuery);

@@ -28,3 +28,5 @@
 [ ] Rename Portfolio Pages
 [ ] Hide download resume button
 [ ] update resume
+[ ] add copy write to footer
+[ ] make age dynamic
